@@ -25,7 +25,7 @@ require_once ('inc/header.inc.php');
    $produit = $resultat->fetch(PDO::FETCH_ASSOC);
     ?>
     <div class="col-4">
-        <img src="<?=$produit['photo']?>" alt="" class="img-thumbnail">
+        <img src="<?= URL. 'photo/' .$produit['photo']?>" alt="" class="img-thumbnail">
     </div>
     <div class="col-8 my-auto">
         <h2><?=$produit['titre']?></h2>

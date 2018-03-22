@@ -51,7 +51,7 @@ require_once('inc/header.inc.php');
                 while ($produit = $resultat->fetch(PDO::FETCH_ASSOC)):
                 ?>
                 <div class="card text-center" style="width: 18rem;">
-                    <img class="card-img-top" src="<?= $produit['photo'] ?>" alt="Card image cap">
+                    <img class="card-img-top" src="<?= URL . 'photo/' . $produit['photo'] ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title"> <?= $produit['titre']  ?></h5>
                         <p class="card-text"><?= $produit['description']?></p>

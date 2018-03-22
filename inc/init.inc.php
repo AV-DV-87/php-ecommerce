@@ -9,10 +9,10 @@ $pdo = new PDO('mysql:host=localhost;dbname=boutique','root','',
 session_start();
 
 //-------------CHEMIN qui permet de façon fixe le chemin du site sert notamment au upload de photos
-define("RACINE_SITE", $_SERVER['DOCUMENT_ROOT'] . "/php-formation/e-commerce/");
+define("RACINE_SITE", $_SERVER['DOCUMENT_ROOT'] . "/procedu-php-ecommerce/");
 //    echo RACINE_SITE;
 //    echo"<pre>"; print_r($_SERVER);echo"<pre>";
-define("URL", 'http://localhost/php-formation/e-commerce/');
+define("URL", 'http://localhost/procedu-php-ecommerce/');
 //jour de mise en ligne on changera juste cette constante pour modifier tous les urls du site
 
 $content = '';
